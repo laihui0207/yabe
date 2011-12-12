@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<testsuite failures="0" time="0.536" errors="0" skipped="0" tests="7" name="BasicTest">
-  <testcase classname="BasicTest" name="aVeryImportantThingToTest" time="0.058">
+<testsuite failures="1" time="0.566" errors="0" skipped="0" tests="6" name="BasicTest">
+  <testcase classname="BasicTest" name="aVeryImportantThingToTest" time="0.068">
       </testcase>
-  <testcase classname="BasicTest" name="createAndRetrieveUser" time="0.022">
+  <testcase classname="BasicTest" name="createAndRetrieveUser" time="0.028">
       </testcase>
-  <testcase classname="BasicTest" name="tryConnectAsUser" time="0.026">
+  <testcase classname="BasicTest" name="tryConnectAsUser" time="0.023">
       </testcase>
-  <testcase classname="BasicTest" name="createPost" time="0.048">
+  <testcase classname="BasicTest" name="createPost" time="0.046">
       </testcase>
-  <testcase classname="BasicTest" name="postComment" time="0.06">
+  <testcase classname="BasicTest" name="postComment" time="0.026">
       </testcase>
-  <testcase classname="BasicTest" name="useTheCommentsRelation" time="0.109">
+  <testcase classname="BasicTest" name="useTheCommentsRelation" time="0.086">
       </testcase>
-  <testcase classname="BasicTest" name="testTags" time="0.213">
-      </testcase>
+  <testcase classname="BasicTest" name="testTags" time="0.289">
+                  <failure type="" message="Failure, expected:&lt;[{tag=Blue,[pound=1},{tag=Green,pound=1},{tag=Red,]pound=2}]&gt; but was:&lt;[{tag=Blue,[ pound=1}, {tag=Green, pound=1}, {tag=Red, ]pound=2}]&gt;">
+        <![CDATA[
+          In /test/BasicTest.java, line 125
+          
+              			assertEquals(&quot;[{tag=Blue,pound=1},{tag=Green,pound=1},{tag=Red,pound=2}]&quot;,cloud.toString()); :
+          
+        ]]>
+        </failure>
+        }
+                  </testcase>
 </testsuite>

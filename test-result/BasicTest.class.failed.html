@@ -61,12 +61,12 @@
     </head>
     <body>
         
-        <div id="header" class="block success">
+        <div id="header" class="block failed">
             <h1>
                 BasicTest.class
             </h1>
             <p>
-                SUCCESS
+                FAILED
             </p>
         </div>
         
@@ -80,7 +80,7 @@
                                                                         Ok
                                             </td>
                     <td width="5%" align="right" class="time" valign="top">
-                        58 ms
+                        68 ms
                     </td>
                 </tr>
                                 <tr>
@@ -91,7 +91,7 @@
                                                                         Ok
                                             </td>
                     <td width="5%" align="right" class="time" valign="top">
-                        22 ms
+                        28 ms
                     </td>
                 </tr>
                                 <tr>
@@ -102,7 +102,7 @@
                                                                         Ok
                                             </td>
                     <td width="5%" align="right" class="time" valign="top">
-                        26 ms
+                        23 ms
                     </td>
                 </tr>
                                 <tr>
@@ -113,7 +113,7 @@
                                                                         Ok
                                             </td>
                     <td width="5%" align="right" class="time" valign="top">
-                        48 ms
+                        46 ms
                     </td>
                 </tr>
                                 <tr>
@@ -124,7 +124,7 @@
                                                                         Ok
                                             </td>
                     <td width="5%" align="right" class="time" valign="top">
-                        60 ms
+                        26 ms
                     </td>
                 </tr>
                                 <tr>
@@ -135,18 +135,28 @@
                                                                         Ok
                                             </td>
                     <td width="5%" align="right" class="time" valign="top">
-                        109 ms
+                        86 ms
                     </td>
                 </tr>
                                 <tr>
-                    <td width="20%" class="passed" valign="top">
+                    <td width="20%" class="failed" valign="top">
                         <span>testTags</span>
                     </td>
-                    <td class="" valign="top">
-                                                                        Ok
-                                            </td>
+                    <td class="error" valign="top">
+                                                <strong>Failure, expected:&lt;[{tag=Blue,[pound=1},{tag=Green,pound=1},{tag=Red,]pound=2}]&gt; but was:&lt;[{tag=Blue,[ pound=1}, {tag=Green, pound=1}, {tag=Red, ]pound=2}]&gt;</strong>
+                                                <div class="source">
+                            <span>In /test/BasicTest.java, line 125 :</span>
+                        </div>
+                        <div class="sourceLine">
+                            <span>
+                                
+                                    			assertEquals(&quot;[{tag=Blue,pound=1},{tag=Green,pound=1},{tag=Red,pound=2}]&quot;,cloud.toString());
+                                
+                            </span>
+                        </div>
+                                                                                                                    </td>
                     <td width="5%" align="right" class="time" valign="top">
-                        213 ms
+                        289 ms
                     </td>
                 </tr>
                             </table>
