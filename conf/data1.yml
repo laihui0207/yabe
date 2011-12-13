@@ -1,4 +1,15 @@
 # Test data
+Tag(play):
+        name: play
+
+Tag(architecture):
+        name: Architecture
+
+Tag(test):
+        name: Test
+
+Tag(mvc):
+        name: MVC
 
 User(bob):
     email:          bob@gmail.com
@@ -15,6 +26,9 @@ Post(firstBobPost):
     title:          About the model layer
     postedAt:       2009-06-14
     author:         bob
+    tags:        
+                   - play
+                   - mvc 
     content:        >
                     The model has a central position in a Play! application. It is the domain-specific 
                     representation of the information on which the application operates.
@@ -30,6 +44,8 @@ Post(secondBobPost):
     title:          Just a test of YABE
     postedAt:       2009-03-25
     author:         bob
+    tags:          
+                   - play
     content:        >
                     Well, it's just a test.
                     
