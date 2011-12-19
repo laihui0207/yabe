@@ -9,3 +9,7 @@ email=Email
 password=Password
 fullname=Full Name
 isAdmin=User is admin
+
+secure.username=Your email:
+secure.password=Your password:
+secure.signin=Log in now

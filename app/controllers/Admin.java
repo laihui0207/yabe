@@ -11,10 +11,12 @@ public class Admin extends Controller {
 	static void setConnectedUser() { 
 		if(Security.isConnected()){
 			User user=User.find("byEmail",Security.connected()).first();
-			renderArgs.put("user",user.fullname);
+			renderArgs.put("user",user.email);
 		}
 	}
 	public static void index() { 
-     		render(); 
+		String user=Security.connected();
+		List<Post> posts=Post.find("author.email",user).fetch();
+     		render(posts); 
 	}
 }
