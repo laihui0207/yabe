@@ -1,0 +1,32 @@
+#{extends 'admin.html' /} 
+<h3>Write,<span>a new post</span></h3>
+
+#{form @save() }
+	#{ifErrors }
+		<p class="error">Please correct these errors</p>
+	#{/ifErrors }
+	
+	<p>
+		#{field 'title' }
+		<label>Post title:</label>
+		<input type="text" name="${field.name}" value="${post?.title}"/>
+		<span class="error">#{error 'post.title' /}</span>
+		#{/field }
+	</p>
+	<p>
+		#{field 'content' }
+		<label>Write here:</label>
+		<textarea name="${field.name}">${post?.content}</textarea>
+		<span class="error">#{error 'post.content' /}</span>
+		#{/field }
+	</p>
+	<p>
+		#{field 'tags' }
+		<label>Enter some tags:</label>
+		<input type="text" name="${field.name}" value="${post?.tags?.join(' ')}" size="50">
+		#{/field }
+	</p>
+	<p>
+	<input type="submit" name="some_name" value="Publish this post to the blog">
+	</p>
+	#{/form }

@@ -1,5 +1,88 @@
-13 Dec 2011 00:06:49,846 INFO  ~ Starting /Users/sunlaihui/Documents/workspace/javaworkspace/yabe
-13 Dec 2011 00:06:50,692 WARN  ~ You're running Play! in DEV mode
-13 Dec 2011 00:06:50,817 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-13 Dec 2011 00:07:01,001 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
-13 Dec 2011 00:07:01,983 INFO  ~ Application 'yabe' is now started !
+28 Dec 2011 23:18:34,208 INFO  ~ Starting /Users/sunlaihui/Documents/workspace/javaworkspace/yabe
+28 Dec 2011 23:18:34,223 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.secure)
+28 Dec 2011 23:18:34,223 INFO  ~ Module secure is available (/Users/sunlaihui/JavaTool/play/play-1.2.4/modules/secure)
+28 Dec 2011 23:18:34,245 INFO  ~ Module crud is available (/Users/sunlaihui/JavaTool/play/play-1.2.4/modules/crud)
+28 Dec 2011 23:18:35,860 WARN  ~ You're running Play! in DEV mode
+28 Dec 2011 23:18:36,350 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+28 Dec 2011 23:18:58,140 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+28 Dec 2011 23:19:00,601 INFO  ~ Application 'yabe' is now started !
+29 Dec 2011 00:21:14,504 ERROR ~ 
+
+@68pc71pj3
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 12)
+RuntimeException occured : Cannot load fixture data1.yml: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+
+play.exceptions.JavaExecutionException: Cannot load fixture data1.yml: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data1.yml: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:12)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+	at play.test.Fixtures.loadModels(Fixtures.java:187)
+	... 4 more
+29 Dec 2011 00:21:15,023 ERROR ~ 
+
+@68pc71pj3
+Internal Server Error (500) for request GET /admin
+
+Execution exception (In /app/Bootstrap.java around line 12)
+RuntimeException occured : Cannot load fixture data1.yml: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+
+play.exceptions.JavaExecutionException: Cannot load fixture data1.yml: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data1.yml: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:12)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+	at play.test.Fixtures.loadModels(Fixtures.java:187)
+	... 4 more
+29 Dec 2011 00:21:28,787 ERROR ~ 
+
+@68pc71pj4
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 12)
+RuntimeException occured : Cannot load fixture data1.yml: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+
+play.exceptions.JavaExecutionException: Cannot load fixture data1.yml: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data1.yml: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:12)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+	at play.test.Fixtures.loadModels(Fixtures.java:187)
+	... 4 more
+29 Dec 2011 00:21:28,828 ERROR ~ 
+
+@68pc71pj4
+Internal Server Error (500) for request GET /a
+
+Execution exception (In /app/Bootstrap.java around line 12)
+RuntimeException occured : Cannot load fixture data1.yml: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+
+play.exceptions.JavaExecutionException: Cannot load fixture data1.yml: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture data1.yml: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:12)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture data1.yml, duplicate id 'play' for type models.Tag
+	at play.test.Fixtures.loadModels(Fixtures.java:187)
+	... 4 more
